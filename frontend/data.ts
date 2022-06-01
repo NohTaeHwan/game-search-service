@@ -8,7 +8,7 @@ export const posts:IPost[] = [
         writer: "1번 게시글 글쓴이",
         createAt: "2022-05-31",
         category: "메인 카테고리",
-        subCategory: "부 카테고리",
+        subCategory: "자유",
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export const posts:IPost[] = [
         writer: "2번 게시글 글쓴이",
         createAt: "2022-05-31",
         category: "메인 카테고리",
-        subCategory: "부 카테고리",
+        subCategory: "자유",
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ export const posts:IPost[] = [
         writer: "3번 게시글 글쓴이",
         createAt: "2022-05-31",
         category: "메인 카테고리",
-        subCategory: "부 카테고리",
+        subCategory: "탑",
     },
     {
         id: 4,
@@ -35,7 +35,7 @@ export const posts:IPost[] = [
         writer: "4번 게시글 글쓴이",
         createAt: "2022-05-31",
         category: "메인 카테고리",
-        subCategory: "부 카테고리",
+        subCategory: "탑",
     },
     {
         id: 5,
@@ -44,7 +44,7 @@ export const posts:IPost[] = [
         writer: "5번 게시글 글쓴이",
         createAt: "2022-05-31",
         category: "메인 카테고리",
-        subCategory: "부 카테고리",
+        subCategory: "정글",
     },
     {
         id: 6,
@@ -53,7 +53,7 @@ export const posts:IPost[] = [
         writer: "6번 게시글 글쓴이",
         createAt: "2022-05-31",
         category: "메인 카테고리",
-        subCategory: "부 카테고리",
+        subCategory: "정글",
     },
     {
         id: 7,
@@ -62,7 +62,7 @@ export const posts:IPost[] = [
         writer: "7번 게시글 글쓴이",
         createAt: "2022-05-31",
         category: "메인 카테고리",
-        subCategory: "부 카테고리",
+        subCategory: "미드",
     },
     {
         id: 8,
@@ -71,7 +71,7 @@ export const posts:IPost[] = [
         writer: "8번 게시글 글쓴이",
         createAt: "2022-05-31",
         category: "메인 카테고리",
-        subCategory: "부 카테고리",
+        subCategory: "미드",
     },
     {
         id: 9,
@@ -80,7 +80,7 @@ export const posts:IPost[] = [
         writer: "9번 게시글 글쓴이",
         createAt: "2022-05-31",
         category: "메인 카테고리",
-        subCategory: "부 카테고리",
+        subCategory: "원딜",
     },
     {
         id: 10,
@@ -89,63 +89,81 @@ export const posts:IPost[] = [
         writer: "10번 게시글 글쓴이",
         createAt: "2022-05-31",
         category: "메인 카테고리",
-        subCategory: "부 카테고리",
+        subCategory: "원딜",
+    },
+    {
+        id: 11,
+        title: "9번 게시글 제목",
+        content: "9번 게시글 내용",
+        writer: "9번 게시글 글쓴이",
+        createAt: "2022-06-01",
+        category: "메인 카테고리",
+        subCategory: "서포터",
+    },
+    {
+        id: 12,
+        title: "10번 게시글 제목",
+        content: "10번 게시글 내용",
+        writer: "10번 게시글 글쓴이",
+        createAt: "2022-06-01",
+        category: "메인 카테고리",
+        subCategory: "서포터",
     },
 ]
 
-export const replies:IReply[] = [
-    {
-        id: 1,
-        writer: string,
-        createAt: string, // new Date?
-        content: string,
-    },
-    {
-        id: 2,
-        writer: string,
-        createAt: string, // new Date?
-        content: string,
-    },
-    {
-        id: 3,
-        writer: string,
-        createAt: string, // new Date?
-        content: string,
-    },
-    {
-        id: 4,
-        writer: string,
-        createAt: string, // new Date?
-        content: string,
-    },
-    {
-        id: 5,
-        writer: string,
-        createAt: string, // new Date?
-        content: string,
-    },
-    {
-        id: 6,
-        writer: string,
-        createAt: string, // new Date?
-        content: string,
-    },
-    {
-        id: 7,
-        writer: string,
-        createAt: string, // new Date?
-        content: string,
-    },
-    {
-        id: 8,
-        writer: string,
-        createAt: string, // new Date?
-        content: string,
-    },
-    {
-        id: 9,
-        writer: string,
-        createAt: string, // new Date?
-        content: string,
-    }
-]
+// export const replies:IReply[] = [
+//     {
+//         id: 1,
+//         writer: string,
+//         createAt: string, // new Date?
+//         content: string,
+//     },
+//     {
+//         id: 2,
+//         writer: string,
+//         createAt: string, // new Date?
+//         content: string,
+//     },
+//     {
+//         id: 3,
+//         writer: string,
+//         createAt: string, // new Date?
+//         content: string,
+//     },
+//     {
+//         id: 4,
+//         writer: string,
+//         createAt: string, // new Date?
+//         content: string,
+//     },
+//     {
+//         id: 5,
+//         writer: string,
+//         createAt: string, // new Date?
+//         content: string,
+//     },
+//     {
+//         id: 6,
+//         writer: string,
+//         createAt: string, // new Date?
+//         content: string,
+//     },
+//     {
+//         id: 7,
+//         writer: string,
+//         createAt: string, // new Date?
+//         content: string,
+//     },
+//     {
+//         id: 8,
+//         writer: string,
+//         createAt: string, // new Date?
+//         content: string,
+//     },
+//     {
+//         id: 9,
+//         writer: string,
+//         createAt: string, // new Date?
+//         content: string,
+//     }
+// ]

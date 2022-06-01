@@ -8,11 +8,11 @@ const NavItem:FunctionComponent<{activeItem: string, setActiveItem:Function, nam
         activeItem !== name ? (
             <Link href={route}>
                 <a>
-                    <span onClick={() => {setActiveItem(name)}}>{name}</span>
+                    <span style={{marginRight: "5px"}} onClick={() => {setActiveItem(name)}}>{name}</span>
                 </a>
             </Link>
         ) :
-            <span>{name}</span>
+            <span style={{marginRight: "5px"}}>{name}</span>
     )
 }
 
@@ -24,13 +24,13 @@ const BoardNavbar: NextPage = () => {
         if(pathname === "/free") {
             setActiveItem("free");
         }
-        if(pathname === "/class") {
-            setActiveItem("class");
+        if(pathname === "/lane") {
+            setActiveItem("lane");
         }
     },[])
     return <div>
         <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name={"자유게시판"} route={"/board/free"} />
-        <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name={"직업게시판"} route={"/board/class"} />
+        <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name={"라인별게시판"} route={"/board/lane"} />
     </div>
 }
 

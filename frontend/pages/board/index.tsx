@@ -1,10 +1,10 @@
 import {NextPage} from "next";
 import BoardNavbar from "../../components/BoardNavbar";
 
-const index: NextPage = () => {
+const BoardIndex: NextPage = () => {
     return <div>
-        <BoardNavbar />
+        boardindex
     </div>
 }
 
-export default index;
+export default BoardIndex;

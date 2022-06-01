@@ -7,11 +7,11 @@ import Link from "next/link";
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <Link href={"/board/free"}>
-        <a>
-          <span>게시판으로....</span>
-        </a>
-      </Link>
+      {/*<Link href={"/board/free"}>*/}
+      {/*  <a>*/}
+      {/*    <span>게시판으로....</span>*/}
+      {/*  </a>*/}
+      {/*</Link>*/}
     </div>
   )
 }
