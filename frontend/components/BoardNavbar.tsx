@@ -12,7 +12,7 @@ const NavItem:FunctionComponent<{activeItem: string, setActiveItem:Function, nam
                 </a>
             </Link>
         ) :
-            <span style={{marginRight: "5px"}}>{name}</span>
+            <span style={{marginRight: "5px", fontWeight: "bold"}}>{name}</span>
     )
 }
 

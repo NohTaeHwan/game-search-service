@@ -9,7 +9,7 @@ export interface IPost {
 }
 
 export interface IReply {
-    id: number,
+    postId: number,
     writer: string,
     createAt: string, // new Date?
     content: string,

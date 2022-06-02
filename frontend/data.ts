@@ -111,59 +111,77 @@ export const posts:IPost[] = [
     },
 ]
 
-// export const replies:IReply[] = [
-//     {
-//         id: 1,
-//         writer: string,
-//         createAt: string, // new Date?
-//         content: string,
-//     },
-//     {
-//         id: 2,
-//         writer: string,
-//         createAt: string, // new Date?
-//         content: string,
-//     },
-//     {
-//         id: 3,
-//         writer: string,
-//         createAt: string, // new Date?
-//         content: string,
-//     },
-//     {
-//         id: 4,
-//         writer: string,
-//         createAt: string, // new Date?
-//         content: string,
-//     },
-//     {
-//         id: 5,
-//         writer: string,
-//         createAt: string, // new Date?
-//         content: string,
-//     },
-//     {
-//         id: 6,
-//         writer: string,
-//         createAt: string, // new Date?
-//         content: string,
-//     },
-//     {
-//         id: 7,
-//         writer: string,
-//         createAt: string, // new Date?
-//         content: string,
-//     },
-//     {
-//         id: 8,
-//         writer: string,
-//         createAt: string, // new Date?
-//         content: string,
-//     },
-//     {
-//         id: 9,
-//         writer: string,
-//         createAt: string, // new Date?
-//         content: string,
-//     }
-// ]
+export const replies:IReply[] = [
+    {
+        postId: 1,
+        writer: "작성자",
+        createAt: "22-06-02", // new Date?
+        content: "1번 댓글입니다",
+    },
+    {
+        postId: 2,
+        writer: "작성자",
+        createAt: "22-06-02", // new Date?
+        content: "2번 댓글입니다",
+    },
+    {
+        postId: 3,
+        writer: "작성자",
+        createAt: "22-06-02", // new Date?
+        content: "3번 댓글입니다",
+    },
+    {
+        postId: 4,
+        writer: "작성자",
+        createAt: "22-06-02", // new Date?
+        content: "4번 댓글입니다",
+    },
+    {
+        postId: 5,
+        writer: "작성자",
+        createAt: "22-06-02", // new Date?
+        content: "5번 댓글입니다",
+    },
+    {
+        postId: 6,
+        writer: "작성자",
+        createAt: "22-06-02", // new Date?
+        content: "6번 댓글입니다",
+    },
+    {
+        postId: 7,
+        writer: "작성자",
+        createAt: "22-06-02", // new Date?
+        content: "7번 댓글입니다",
+    },
+    {
+        postId: 8,
+        writer: "작성자",
+        createAt: "22-06-02", // new Date?
+        content: "8번 댓글입니다",
+    },
+    {
+        postId: 9,
+        writer: "작성자",
+        createAt: "22-06-02", // new Date?
+        content: "9번 댓글입니다",
+    },
+    {
+        postId: 10,
+        writer: "작성자",
+        createAt: "22-06-02", // new Date?
+        content: "10번 댓글입니다",
+    },
+    {
+        postId: 11,
+        writer: "작성자",
+        createAt: "22-06-02", // new Date?
+        content: "11번 댓글입니다",
+    },
+    {
+        postId: 12,
+        writer: "작성자",
+        createAt: "22-06-02", // new Date?
+        content: "12번 댓글입니다",
+    },
+]

@@ -7,9 +7,9 @@ const BoardForm:FunctionComponent<{category: string}> = ({category}) => {
     return (
         <div>
             {
-                categoryPosts.map((i) =>
-                {return <div>
-                    <Link href={}>
+                categoryPosts.map((i, index) =>
+                {return <div key={index}>
+                    <Link href={`/board/${i.id}`}>
                         <a>
                             <span style={{marginRight: "5px"}}>{i.id}</span>
                             <span style={{marginRight: "5px"}}>{i.title}</span>
@@ -17,7 +17,6 @@ const BoardForm:FunctionComponent<{category: string}> = ({category}) => {
                             <span style={{marginRight: "5px"}}>{i.createAt}</span>
                     </a>
                     </Link>
-
                 </div>})
             }
         </div>
