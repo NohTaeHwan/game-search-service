@@ -12,6 +12,7 @@
     <artifactId>game-search-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>game-search-service</name>
+    <packaging>pom</packaging>
     <description>game-search-service</description>
 
     <modules>

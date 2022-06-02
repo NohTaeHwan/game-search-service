@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <properties resource="generator.properties"/>
+    <context id="MySqlContext" targetRuntime="Mybatis3" defaultModelType="flat">
+        <property name="autoDelimitKeywords" value="true"/>
+        <property name="beginningDelimiter" value="`"/><!-- 예약어 `` 감싸게 적용 -->
+        <property name="endingDelimiter" value="`"/>
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin" />
+        <plugin type="org.mybatis.generator.plugins.MapperAnnotationPlugin" />
+        <!--<commentGenerator type="com.toy.search.mbg.CommentGenerator">
+            &lt;!&ndash; 자동 생성된 주석 제거 여부(true：삭제, false:삭제안함) &ndash;&gt;
+            <property name="suppressAllComments" value="true"/>
+            <property name="suppressDate" value="true"/>
+            <property name="addRemarkComments" value="true"/>
+        </commentGenerator>-->
+
+        <jdbcConnection driverClass="${jdbc.driverClass}"
+                        connectionURL="${jdbc.connectionURL}"
+                        userId="${jdbc.userId}"
+                        password="${jdbc.password}">
+            <!--mysql 8.0에서 코드를 생성하지 않는 문제 해결-->
+            <property name="nullCatalogMeansCurrent" value="true" />
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="com.toy.search.mbg.model" targetProject="game-search-mbg/src/main/java"/>
+
+        <sqlMapGenerator targetPackage="com.toy.search.mbg.mapper" targetProject="game-search-mbg/src/main/resources"/>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.toy.search.mbg.mapper"
+                             targetProject="game-search-mbg/src/main/java"/>
+
+        <table tableName="post">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+    </context>
+</generatorConfiguration>
