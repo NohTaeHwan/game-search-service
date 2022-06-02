@@ -1,5 +1,10 @@
 
+
+---
 spring:
+  config:
+    activate:
+      on-profile: dev
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/game_service?useSSL=false&useUnicode=yes&characterEncoding=utf-8&useLegacyDatetimeCode=false&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
     username: root
