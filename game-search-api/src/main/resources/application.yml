@@ -10,3 +10,8 @@ spring:
     username: root
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+#riot open-api data
+open-api:
+  riot:
+    api-key: RGAPI-1d5f1be9-ae39-4cbb-a7b3-2dfd3ca4f169
