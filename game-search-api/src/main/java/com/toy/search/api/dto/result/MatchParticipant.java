@@ -67,7 +67,7 @@ public class MatchParticipant {
     }
 
     @Override
-    public boolean equals(Object obj) {
+    public boolean equals(final Object obj) {
         if(this == obj) return true;
         if(obj == null || getClass() != obj.getClass()) return false;
 
@@ -77,10 +77,14 @@ public class MatchParticipant {
                 Objects.equals(deaths, matchParticipant.deaths) && Objects.equals(goldEarned, matchParticipant.goldEarned) && Objects.equals(item0, matchParticipant.item0) && Objects.equals(item1, matchParticipant.item1) &&
                 Objects.equals(item2, matchParticipant.item2) && Objects.equals(item3, matchParticipant.item3) && Objects.equals(item4, matchParticipant.item4) && Objects.equals(item5, matchParticipant.item5) &&
                 Objects.equals(item6, matchParticipant.item6) && Objects.equals(kills, matchParticipant.kills) && Objects.equals(neutralMinionsKilled, matchParticipant.neutralMinionsKilled) &&
-                totalMinionsKilled== matchParticipant.totalMinionsKilled&& summoner1Id== matchParticipant.summoner1Id&& summoner2Id== matchParticipant.summoner2Id&&
-                summonerName== matchParticipant.summonerName&& totalDamageDealtToChampions== matchParticipant.totalDamageDealtToChampions&&
-                visionScore== matchParticipant.visionScore&& visionWardsBoughtInGame== matchParticipant.visionWardsBoughtInGame&& wardsKilled== matchParticipant.wardsKilled&&
-                wardsPlaced== matchParticipant.wardsPlaced&& win== matchParticipant.win&& kda== matchParticipant.kda&&
-                killParticipation== matchParticipant.killParticipation&& perk== matchParticipant.perk&& style== matchParticipant.style;
+                Objects.equals(totalMinionsKilled, matchParticipant.totalMinionsKilled) && Objects.equals(summoner1Id, matchParticipant.summoner1Id) && Objects.equals(summoner2Id, matchParticipant.summoner2Id) &&
+                Objects.equals(summonerName, matchParticipant.summonerName) && Objects.equals(totalDamageDealtToChampions, matchParticipant.totalDamageDealtToChampions) &&
+                Objects.equals(visionScore, matchParticipant.visionScore) && Objects.equals(visionWardsBoughtInGame, matchParticipant.visionWardsBoughtInGame) && Objects.equals(wardsKilled, matchParticipant.wardsKilled) &&
+                Objects.equals(wardsPlaced, matchParticipant.wardsPlaced) &&
+                Objects.equals(killParticipation, matchParticipant.killParticipation) &&
+                Objects.equals(perk, matchParticipant.perk) &&
+                Objects.equals(style, matchParticipant.style)&&
+                Objects.equals(kda, matchParticipant.kda) &&
+                win== matchParticipant.win ;
     }
 }

@@ -34,7 +34,7 @@ public class LolMatchResult {
     }
 
     @Override
-    public boolean equals(Object obj) {
+    public boolean equals(final Object obj) {
         if(this == obj) return true;
         if(obj == null || getClass() != obj.getClass()) return false;
 
@@ -43,6 +43,7 @@ public class LolMatchResult {
         return Objects.equals(gameEndTimestamp, lolMatchResult.gameEndTimestamp) && Objects.equals(gameDuration, lolMatchResult.gameDuration) &&
                 Objects.equals(gameId, lolMatchResult.gameId) && Objects.equals(gameMode, lolMatchResult.gameMode) &&
                 Objects.equals(gameStartTimestamp, lolMatchResult.gameStartTimestamp) && Objects.equals(gameType, lolMatchResult.gameType) &&
-                Objects.equals(mapId, lolMatchResult.mapId) &&matchParticipants == lolMatchResult.matchParticipants;
+                Objects.equals(mapId, lolMatchResult.mapId) &&
+                matchParticipants == lolMatchResult.matchParticipants;
     }
 }

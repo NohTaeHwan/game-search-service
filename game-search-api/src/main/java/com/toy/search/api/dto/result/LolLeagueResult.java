@@ -41,11 +41,11 @@ public class LolLeagueResult {
 
         final LolLeagueResult lolLeagueResult = (LolLeagueResult) obj;
 
-        return leagueId == lolLeagueResult.leagueId && queueType == lolLeagueResult.queueType &&
-                tier == lolLeagueResult.tier && rank == lolLeagueResult.rank &&
-                summonerId == lolLeagueResult.summonerId && summonerName == lolLeagueResult.summonerName &&
-                leaguePoints == lolLeagueResult.leaguePoints && wins == lolLeagueResult.wins &&
-                losses == lolLeagueResult.losses && veteran == lolLeagueResult.veteran &&
+        return Objects.equals(leagueId, lolLeagueResult.leagueId) && Objects.equals(queueType, lolLeagueResult.queueType) &&
+                Objects.equals(tier, lolLeagueResult.tier) && Objects.equals(rank, lolLeagueResult.rank) &&
+                Objects.equals(summonerId, lolLeagueResult.summonerId) && Objects.equals(summonerName, lolLeagueResult.summonerName) &&
+                Objects.equals(leaguePoints, lolLeagueResult.leaguePoints) && Objects.equals(wins, lolLeagueResult.wins) &&
+                Objects.equals(losses, lolLeagueResult.losses) && veteran == lolLeagueResult.veteran &&
                 inactive == lolLeagueResult.inactive && freshBlood == lolLeagueResult.freshBlood && hotStreak == lolLeagueResult.hotStreak;
     }
 }

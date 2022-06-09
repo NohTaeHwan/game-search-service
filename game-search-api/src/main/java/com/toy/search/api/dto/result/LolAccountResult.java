@@ -34,12 +34,12 @@ public class LolAccountResult {
 
         final LolAccountResult lolAccountResult = (LolAccountResult) obj;
 
-        return id == lolAccountResult.id &&
-                accountId == lolAccountResult.accountId &&
-                puuid == lolAccountResult.puuid &&
-                name == lolAccountResult.name &&
-                profileIconId == lolAccountResult.profileIconId &&
-                revisionDate == lolAccountResult.revisionDate &&
-                summonerLevel == lolAccountResult.summonerLevel;
+        return Objects.equals(id, lolAccountResult.id) &&
+                Objects.equals(accountId, lolAccountResult.accountId) &&
+                Objects.equals(puuid, lolAccountResult.puuid) &&
+                Objects.equals(name, lolAccountResult.name) &&
+                Objects.equals(profileIconId, lolAccountResult.profileIconId) &&
+                Objects.equals(revisionDate, lolAccountResult.revisionDate) &&
+                Objects.equals(summonerLevel, lolAccountResult.summonerLevel);
     }
 }
