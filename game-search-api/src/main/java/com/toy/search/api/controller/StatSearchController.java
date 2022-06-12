@@ -20,7 +20,7 @@ public class StatSearchController {
 
     @GetMapping("")
     @ApiOperation(value="소환사 정보 및 매치 정보 조회")
-    public Map<String,Object> getStatData(String summonerName){
+    public Map<String,Object> getStatData(String summonerName) throws Exception{
 
         //TODO global Exception handler로 처리
         try {

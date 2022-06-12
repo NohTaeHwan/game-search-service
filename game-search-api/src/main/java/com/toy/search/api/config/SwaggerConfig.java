@@ -17,7 +17,7 @@ public class SwaggerConfig extends BaseSwaggerConfig {
                 .description("game search api 문서")
                 .contactName("toy")
                 .version("1.0")
-                //.enableSecurity(true)
+                .enableSecurity(true)
                 .build();
     }
 }

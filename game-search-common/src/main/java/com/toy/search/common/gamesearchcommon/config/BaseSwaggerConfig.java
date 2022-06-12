@@ -26,9 +26,9 @@ public abstract class BaseSwaggerConfig {
                 .apis(RequestHandlerSelectors.basePackage(swaggerProperties.getApiBasePackage()))
                 .paths(PathSelectors.any())
                 .build();
-        /*if (swaggerProperties.isEnableSecurity()) {
+        if (swaggerProperties.isEnableSecurity()) {
             docket.securitySchemes(securitySchemes()).securityContexts(securityContexts());
-        }*/
+        }
         return docket;
     }
 
